@@ -54,6 +54,21 @@
     <ClCompile Include="GravityField.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PointForce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaForce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DragForce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Joint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JointTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics.h">
@@ -102,6 +117,21 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="GravityField.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PointForce.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaForce.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DragForce.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Joint.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JointTest.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

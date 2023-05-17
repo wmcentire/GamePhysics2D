@@ -17,11 +17,11 @@ public:
 		mass{mass},
 		type{type}
 	{
-		if (type == STATIC) mass = 0;
 		invMass = (mass == 0) ? 0 : 1 / mass;
 	}
 
 	void ApplyForce(const glm::vec2& force);
+	bool Intersects(class Body* body);
 
 	//fuck god shit piss ass damn fucking fucking fuck god damn fuck
 	void Step(float dt);

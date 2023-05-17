@@ -151,23 +151,30 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AreaForce.cpp" />
     <ClCompile Include="Body.cpp" />
     <ClCompile Include="CircleShape.cpp" />
+    <ClCompile Include="DragForce.cpp" />
     <ClCompile Include="ForceGenerator.cpp" />
     <ClCompile Include="ForceTest.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="GravityField.cpp" />
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Joint.cpp" />
+    <ClCompile Include="JointTest.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="ParticleTest.cpp" />
+    <ClCompile Include="PointForce.cpp" />
     <ClCompile Include="Primitives.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AreaForce.h" />
     <ClInclude Include="Body.h" />
     <ClInclude Include="CircleShape.h" />
+    <ClInclude Include="DragForce.h" />
     <ClInclude Include="ForceGenerator.h" />
     <ClInclude Include="ForceTest.h" />
     <ClInclude Include="General.h" />
@@ -175,7 +182,10 @@
     <ClInclude Include="GravityField.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Integrator.h" />
+    <ClInclude Include="Joint.h" />
+    <ClInclude Include="JointTest.h" />
     <ClInclude Include="ParticleTest.h" />
+    <ClInclude Include="PointForce.h" />
     <ClInclude Include="Primitives.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="Shape.h" />

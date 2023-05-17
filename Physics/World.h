@@ -13,6 +13,9 @@ public:
 	void AddBody(class Body* body);
 	void RemoveBody(class Body* body);
 
+	void AddJoint(class Joint* joint);
+	void RemoveJoint(class Joint* joint);
+
 	void AddForceGenerator(class ForceGenerator* fg);
 
 public:
@@ -21,4 +24,5 @@ public:
 private:
 	std::list<class Body*> m_bodies;
 	std::vector<class ForceGenerator*> m_forceGenerators;
+	std::list<class Joint*> m_joints;
 };
