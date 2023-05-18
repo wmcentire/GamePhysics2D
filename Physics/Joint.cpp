@@ -11,12 +11,18 @@ Joint::Joint(Body* bodyA, Body* bodyB, float stiffness, float restLength) :
 	if (m_restLength == 0) m_restLength = glm::distance(m_bodyA->position, m_bodyB->position);
 }
 
+Joint::~Joint() {
+	delete m_bodyA;
+	delete m_bodyB;
+}
+
 void Joint::Step(float dt)
 {
 	glm::vec2 direction = m_bodyA->position - m_bodyB->position;
 	float length = glm::length(direction);
 
 	float x = length - m_restLength;
+	if (x < 0) return;
 	float f = -m_stiffness * x;
 
 	glm::vec2 ndirection = glm::normalize(direction);

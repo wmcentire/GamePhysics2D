@@ -4,7 +4,7 @@ class Joint {
 
 public:
 	Joint(class Body* bodyA, class Body* bodyB, float stiffness, float restLength = 0);
-
+	~Joint();
 	void Step(float dt);
 	void Draw(class Graphics* graphics);
 

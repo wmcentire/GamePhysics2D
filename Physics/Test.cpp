@@ -32,7 +32,7 @@ void Test::Run()
 	Update();
 	// fixed time update
 	m_fixedTime += m_time->GetFixedDeltaTime();
-		while (m_fixedTime > m_time->GetFixedDeltaTime())
+		while (m_fixedTime >= m_time->GetFixedDeltaTime())
 		{
 			FixedUpdate();
 			m_fixedTime -= m_time->GetFixedDeltaTime(); // <subtract fixed delta time>

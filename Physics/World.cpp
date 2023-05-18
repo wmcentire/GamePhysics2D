@@ -19,7 +19,7 @@ World::~World()
 void World::Step(float dt)
 {
 	if (!m_bodies.empty() && !m_forceGenerators.empty()) {
-		std::vector<Body*> bodies(m_bodies.begin(), m_bodies.end()); // < use 2. Using Range Constructor https://www.techiedelight.com/convert-list-to-vector-cpp/>
+		std::vector<Body*> bodies(m_bodies.begin(), m_bodies.end()); 
 		for (auto forceGenerator : m_forceGenerators)
 		{
 			forceGenerator->Apply(bodies);
@@ -37,8 +37,7 @@ void World::Draw(Graphics* graphics)
 {
 	for (auto joint : m_joints) joint->Draw(graphics);
 	for (auto forcegenerator : m_forceGenerators) forcegenerator->Draw(graphics);
-	// <call Draw() on all the objects>
-	for (auto& body : m_bodies)
+	for (auto body : m_bodies)
 	{
 		body->Draw(graphics);
 	}

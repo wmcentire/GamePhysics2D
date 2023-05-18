@@ -23,7 +23,6 @@ public:
 	void ApplyForce(const glm::vec2& force);
 	bool Intersects(class Body* body);
 
-	//fuck god shit piss ass damn fucking fucking fuck god damn fuck
 	void Step(float dt);
 	void Draw(class Graphics* graphics);
 	void ClearForce() { force = glm::vec2{ 0, 0 }; }
