@@ -19,14 +19,15 @@ Joint::~Joint() {
 void Joint::Step(float dt)
 {
 	glm::vec2 direction = m_bodyA->position - m_bodyB->position;
+	if (direction == glm::vec2{ 0, 0 }) return;
+
 	float length = glm::length(direction);
 
-	float x = length - m_restLength;
-	if (x < 0) return;
-	float f = -m_stiffness * x;
+	float x = length - m_restLength; // displacement of spring from resting length
+	//if (x < 0) return;
+	float f = (-m_stiffness * x); // force = -k (stiffness) * x (displacement)
 
 	glm::vec2 ndirection = glm::normalize(direction);
-
 	m_bodyA->ApplyForce(ndirection * f);
 	m_bodyB->ApplyForce(-ndirection * f);
 }
