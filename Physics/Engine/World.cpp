@@ -4,7 +4,7 @@
 #include "../Physics/Objects/Joint.h"
 #include <iostream>
 
-glm::vec2 World::gravity{ 0, 9.8 };
+glm::vec2 World::gravity{ 0, -9.8f };
 
 World::~World()
 {

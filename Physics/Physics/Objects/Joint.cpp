@@ -34,5 +34,5 @@ void Joint::Step(float dt)
 
 void Joint::Draw(Graphics* graphics)
 {
-	graphics->DrawLine(m_bodyA->position, m_bodyB->position, glm::vec4{ 1 });
+	graphics->DrawLine(graphics->WorldToScreen(m_bodyA->position), graphics->WorldToScreen(m_bodyB->position), glm::vec4{ 1 });
 }

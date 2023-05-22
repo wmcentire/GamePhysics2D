@@ -16,7 +16,7 @@ Test::~Test()
 void Test::Initialize()
 {
 	m_graphics = new Graphics();
-	m_graphics->CreateWindow("poopystinky", 800, 600);
+	m_graphics->CreateWindow("poopystinky", 800, 600, 8);
 	m_input = new Input();
 	m_time = new Time();
 	m_world = new World();
@@ -31,12 +31,12 @@ void Test::Run()
 	// game loop
 	Update();
 	// fixed time update
-	m_fixedTime += m_time->GetFixedDeltaTime();
-		while (m_fixedTime >= m_time->GetFixedDeltaTime())
-		{
-			FixedUpdate();
-			m_fixedTime -= m_time->GetFixedDeltaTime(); // <subtract fixed delta time>
-		}
+	m_fixedTime += m_time->TimeDelta();
+	while (m_fixedTime >= m_time->GetFixedDeltaTime())
+	{
+		FixedUpdate();
+		m_fixedTime -= m_time->GetFixedDeltaTime(); // <subtract fixed delta time>
+	}
 	// render
 	PreRender();
 	Render();
