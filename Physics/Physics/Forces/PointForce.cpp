@@ -1,5 +1,5 @@
 #include "PointForce.h"
-#include "Body.h"
+#include "../Objects/Body.h"
 
 void PointForce::Apply(std::vector<class Body*> bodies)
 {

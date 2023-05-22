@@ -1,6 +1,6 @@
 #pragma once
 #include "Time.h"
-#include "Body.h"
+#include "../Physics/Objects/Body.h"
 
 namespace Integrator {
 

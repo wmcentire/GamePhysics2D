@@ -1,7 +1,7 @@
 #include "World.h"
-#include "Body.h"
-#include "ForceGenerator.h"
-#include "Joint.h"
+#include "../Physics/Objects/Body.h"
+#include "../Physics/Forces/ForceGenerator.h"
+#include "../Physics/Objects/Joint.h"
 #include <iostream>
 
 glm::vec2 World::gravity{ 0, 9.8 };

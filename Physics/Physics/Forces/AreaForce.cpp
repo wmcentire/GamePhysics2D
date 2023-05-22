@@ -1,5 +1,5 @@
 #include "AreaForce.h"
-#include "Body.h"
+#include "../Objects/Body.h"
 #include <glm/glm.hpp>
 #include "glm/gtx/quaternion.hpp"
 

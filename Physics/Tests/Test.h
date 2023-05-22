@@ -1,9 +1,9 @@
 #pragma once
-#include "Graphics.h"
-#include "Input.h"
-#include "Time.h"
-#include "Random.h"
-#include "World.h"
+#include "../Engine/Graphics.h"
+#include "../Engine/Input.h"
+#include "../Engine/Time.h"
+#include "../Engine/Random.h"
+#include "../Engine/World.h"
 
 class Test
 {

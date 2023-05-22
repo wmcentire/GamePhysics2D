@@ -1,6 +1,6 @@
 #include "Joint.h"
 #include "Body.h"
-#include "Graphics.h"
+#include "../../Engine/Graphics.h"
 
 Joint::Joint(Body* bodyA, Body* bodyB, float stiffness, float restLength) : 
 	m_bodyA{bodyA},

@@ -1,12 +1,12 @@
 #include "JointTest.h"
-#include "CircleShape.h"
-#include "World.h"
-#include "Body.h"
-#include "Joint.h"
+#include "../Physics/Objects/CircleShape.h"
+#include "../Engine/World.h"
+#include "../Physics/Objects/Body.h"
+#include "../Physics/Objects/Joint.h"
 
 #define SPRING_STIFFNESS 200
 #define SPRING_LENGTH 100
-#define BODY_DAMPING 40
+#define BODY_DAMPING 30
 #define CHAIN_SIZE 4
 
 void JointTest::Initialize()

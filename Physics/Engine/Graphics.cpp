@@ -1,5 +1,5 @@
 #include "Graphics.h"
-#include "Primitives.h"
+#include "../Physics/Objects/Primitives.h"
 #include <SDL.h>
 
 Graphics::Graphics()
