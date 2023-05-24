@@ -14,7 +14,7 @@ void Body::Step(float dt)
 	if (type != DYNAMIC) return;
 
 	// gravy
-	ApplyForce(World::gravity * gravityScale * mass);
+	//ApplyForce(World::gravity * gravityScale * mass);
 
 	Integrator::ExplicitEuler(*this, dt);
 	ClearForce();
