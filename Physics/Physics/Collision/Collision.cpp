@@ -16,7 +16,7 @@ Contact Collision::GenerateContact(Body* bodyA, Body* bodyB)
 		direction = { randomf(-0.05f, 0.05f), randomf(-0.05f, 0.05f) };
 	}
 
-    float radius = ((CircleShape*)bodyA)->radius + ((CircleShape*)bodyB)->radius;
+    float radius = ((CircleShape*)bodyA->shape)->radius + ((CircleShape*)bodyB->shape)->radius;
     contact.depth = radius - distance;
 
     contact.normal = glm::normalize(direction);
