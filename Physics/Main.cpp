@@ -7,7 +7,7 @@
 
 int main(int argc, char* argv[]) {
 
-	Test* test = new CollisionTest();
+	Test* test = new ParticleTest();
 	test->Initialize();
 	while (!test->IsQuit()) {
 		test->Run();
